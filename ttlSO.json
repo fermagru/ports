@@ -1,1 +1,24 @@
-
+{ "OS":
+ [
+    {
+      "nombre": "Windows",
+      "ttl": "128"
+    },
+   {
+      "nombre": "Windows",
+      "ttl": "128"
+    },
+   {
+      "nombre": "Windows",
+      "ttl": "128"
+    },
+   {
+      "nombre": "Windows",
+      "ttl": "128"
+    },
+   {
+      "nombre": "Windows",
+      "ttl": "128"
+    }
+  ]
+}
