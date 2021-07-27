@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Jul 27 19:31:47 2021 as: nmap -sC -sV -p80,8069,22 -oX target_10.0.2.5 10.0.2.5 -->
+<nmaprun scanner="nmap" args="nmap -sC -sV -p80,8069,22 -oX target_10.0.2.5 10.0.2.5" start="1627407107" startstr="Tue Jul 27 19:31:47 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="3" services="22,80,8069"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1627407107" endtime="1627407114"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.2.5" addrtype="ipv4"/>
+<address addr="8E:85:D2:25:1B:89" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" product="OpenSSH" version="7.6p1 Ubuntu 4ubuntu0.3" extrainfo="Ubuntu Linux; protocol 2.0" ostype="Linux" method="probed" conf="10"><cpe>cpe:/a:openbsd:openssh:7.6p1</cpe><cpe>cpe:/o:linux:linux_kernel</cpe></service><script id="ssh-hostkey" output="&#xa;  2048 03:2c:7b:0b:7b:ce:e8:f7:25:45:c3:39:88:f0:b9:6e (RSA)&#xa;  256 01:ca:1c:15:7a:00:70:ca:9b:61:56:bb:ad:e7:18:e9 (ECDSA)&#xa;  256 73:fb:79:a8:8b:3b:c2:db:89:af:ff:c6:e6:17:23:81 (ED25519)"><table>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">032c7b0b7bcee8f72545c33988f0b96e</elem>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDOyMQ2DGIcEmxbtNVkD7jrKCSL2YIZ+CiPJ6RbXIm+XVt3OBGMU/mHL9tL1KJsfz/1W977tMiHFfuLgqluj2MDlZ1qywyIem0DXnZFChrvkCm1QZ+zEhgaNll2yzyzF46T55SQUakFGxO+8JmkLX0U2SDLXTETFmwLFCP91WuL9QtLaxHR/tdu9IPF4QDOQ+3KE8AafOFY57xZLNiloBhWQAnfiAg+6ULiEN/Hx7R5Bee4/4qayxcL0lUsaD+lxgD5zSeSXJSWVuYCLv2feYXXSZ/Mh6J/L0Ml3YTUnYseViVw0JOROyTD4Jt6EbQKBZks75toWiSYfmegV3+c+FK3</elem>
+<elem key="bits">2048</elem>
+</table>
+<table>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">01ca1c157a0070ca9b6156bbade718e9</elem>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBL/8oAjjLArelPnVhcp4bCB875IxLCXv1EU9aZ0MIxITA31hZwLwWhA7q4AVG3X/FaPRq/8iz1WSO0eRKMBCtU4=</elem>
+<elem key="bits">256</elem>
+</table>
+<table>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">73fb79a88b3bc2db89afffc6e6172381</elem>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIHg7D6jiMmIDd4gJ32cPlX4JcBrx4CVuUDIcfCM+KGI5</elem>
+<elem key="bits">256</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Apache httpd" version="2.4.38" extrainfo="(Debian)" method="probed" conf="10"><cpe>cpe:/a:apache:http_server:2.4.38</cpe></service><script id="http-server-header" output="Apache/2.4.38 (Debian)"><elem>Apache/2.4.38 (Debian)</elem>
+</script><script id="http-title" output="Apache2 Debian Default Page: It works"><elem key="title">Apache2 Debian Default Page: It works</elem>
+</script></port>
+<port protocol="tcp" portid="8069"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" product="Werkzeug httpd" version="0.14.1" extrainfo="Python 3.7.3" method="probed" conf="10"><cpe>cpe:/a:python:python:3.7.3</cpe></service><script id="http-server-header" output="Werkzeug/0.14.1 Python/3.7.3"><elem>Werkzeug/0.14.1 Python/3.7.3</elem>
+</script><script id="http-title" output="Odoo&#xa;Requested resource was http://10.0.2.5:8069/web/login"><elem key="title">Odoo</elem>
+<elem key="redirect_url">http://10.0.2.5:8069/web/login</elem>
+</script></port>
+</ports>
+<times srtt="440" rttvar="2180" to="100000"/>
+</host>
+<runstats><finished time="1627407114" timestr="Tue Jul 27 19:31:54 2021" elapsed="7.17" summary="Nmap done at Tue Jul 27 19:31:54 2021; 1 IP address (1 host up) scanned in 7.17 seconds" exit="success"/><hosts up="1" down="0" total="1"/>
+</runstats>
+</nmaprun>
