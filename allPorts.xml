@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.80 scan initiated Tue Jul 27 18:34:14 2021 as: nmap -sS -&#45;min-rate 5000 -p- -&#45;open -vvv -n -Pn -oX allPorts.xml 10.0.2.0/24 -->
+<nmaprun scanner="nmap" args="nmap -sS -&#45;min-rate 5000 -p- -&#45;open -vvv -n -Pn -oX allPorts.xml 10.0.2.0/24" start="1627403654" startstr="Tue Jul 27 18:34:14 2021" version="7.80" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="65535" services="1-65535"/>
+<verbose level="3"/>
+<debugging level="0"/>
+<taskbegin task="ARP Ping Scan" time="1627403654"/>
+<taskend task="ARP Ping Scan" time="1627403654" extrainfo="255 total hosts"/>
+<taskbegin task="SYN Stealth Scan" time="1627403654"/>
+<taskprogress task="SYN Stealth Scan" time="1627403685" percent="33.02" remaining="63" etc="1627403748"/>
+<taskprogress task="SYN Stealth Scan" time="1627403715" percent="65.69" remaining="32" etc="1627403747"/>
+<taskend task="SYN Stealth Scan" time="1627403746" extrainfo="262140 total ports"/>
+<host starttime="1627403654" endtime="1627403746"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.2.1" addrtype="ipv4"/>
+<address addr="6E:43:DD:0D:FE:BB" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" method="table" conf="3"/></port>
+</ports>
+<times srtt="408" rttvar="86" to="100000"/>
+</host>
+<host starttime="1627403654" endtime="1627403746"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.2.3" addrtype="ipv4"/>
+<address addr="AE:9E:E4:A4:3C:48" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65518">
+<extrareasons reason="no-responses" count="65518"/>
+</extraports>
+<port protocol="tcp" portid="53"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="domain" method="table" conf="3"/></port>
+<port protocol="tcp" portid="88"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="kerberos-sec" method="table" conf="3"/></port>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="389"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ldap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="microsoft-ds" method="table" conf="3"/></port>
+<port protocol="tcp" portid="464"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="kpasswd5" method="table" conf="3"/></port>
+<port protocol="tcp" portid="593"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="http-rpc-epmap" method="table" conf="3"/></port>
+<port protocol="tcp" portid="636"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="ldapssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3268"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="globalcatLDAP" method="table" conf="3"/></port>
+<port protocol="tcp" portid="3269"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="globalcatLDAPssl" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5722"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msdfsr" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49154"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49156"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49157"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49158"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="49164"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="unknown" method="table" conf="3"/></port>
+</ports>
+<times srtt="343" rttvar="161" to="100000"/>
+</host>
+<host starttime="1627403654" endtime="1627403746"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.2.5" addrtype="ipv4"/>
+<address addr="8E:85:D2:25:1B:89" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="65532">
+<extrareasons reason="resets" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="63"/><service name="http" method="table" conf="3"/></port>
+<port protocol="tcp" portid="8069"><state state="open" reason="syn-ack" reason_ttl="63"/></port>
+</ports>
+<times srtt="3696" rttvar="217" to="100000"/>
+</host>
+<host starttime="1627403654" endtime="1627403746"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.2.6" addrtype="ipv4"/>
+<address addr="72:3E:1B:9C:96:39" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65533">
+<extrareasons reason="no-responses" count="65533"/>
+</extraports>
+<port protocol="tcp" portid="5357"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="wsdapi" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5985"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="wsman" method="table" conf="3"/></port>
+</ports>
+<times srtt="399" rttvar="94" to="100000"/>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1627403746"/>
+<taskend task="SYN Stealth Scan" time="1627403799" extrainfo="131070 total ports"/>
+<host starttime="1627403654" endtime="1627403799"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.2.13" addrtype="ipv4"/>
+<address addr="3A:0B:7B:2D:52:8B" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65534">
+<extrareasons reason="no-responses" count="65534"/>
+</extraports>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="pando-pub" method="table" conf="3"/></port>
+</ports>
+<times srtt="399" rttvar="44" to="100000"/>
+</host>
+<host starttime="1627403654" endtime="1627403799"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="10.0.2.18" addrtype="ipv4"/>
+<address addr="DA:4B:3B:76:36:A8" addrtype="mac"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="65532">
+<extrareasons reason="no-responses" count="65532"/>
+</extraports>
+<port protocol="tcp" portid="135"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="msrpc" method="table" conf="3"/></port>
+<port protocol="tcp" portid="5040"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="unknown" method="table" conf="3"/></port>
+<port protocol="tcp" portid="7680"><state state="open" reason="syn-ack" reason_ttl="128"/><service name="pando-pub" method="table" conf="3"/></port>
+</ports>
+<times srtt="368" rttvar="60" to="100000"/>
+</host>
+<taskbegin task="SYN Stealth Scan" time="1627403799"/>
+<taskend task="SYN Stealth Scan" time="1627403800" extrainfo="65535 total ports"/>
+<runstats><finished time="1627403800" timestr="Tue Jul 27 18:36:40 2021" elapsed="146.05" summary="Nmap done at Tue Jul 27 18:36:40 2021; 256 IP addresses (7 hosts up) scanned in 146.05 seconds" exit="success"/><hosts up="7" down="249" total="256"/>
+</runstats>
+</nmaprun>
