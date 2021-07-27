@@ -1,1 +1,29 @@
-
+{ "Aplicacion":
+ [
+    {
+      "id": "01",
+      "nombre": "Odoo",
+      "puerto": "8069"
+    },
+   {
+      "id": "02",
+      "nombre": "MariaDB - MySQL",
+      "puerto": "3306"
+    },
+   {
+      "id": "03",
+      "nombre": "Oracle",
+      "puerto": "1521"
+    },
+   {
+      "id": "04",
+      "nombre": "SQLServer",
+      "puerto": "1433"
+    },
+   {
+      "id": "05",
+      "nombre": "DA - Kerberos",
+      "puerto": "88"
+    }
+  ]
+ 
