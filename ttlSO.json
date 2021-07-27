@@ -5,20 +5,16 @@
       "ttl": "128"
     },
    {
-      "nombre": "Windows",
-      "ttl": "128"
+      "nombre": "Linux",
+      "ttl": "64"
     },
    {
-      "nombre": "Windows",
-      "ttl": "128"
+      "nombre": "MacOS",
+      "ttl": "64"
     },
    {
-      "nombre": "Windows",
-      "ttl": "128"
-    },
-   {
-      "nombre": "Windows",
-      "ttl": "128"
+      "nombre": "Solaris",
+      "ttl": "255"
     }
   ]
 }
